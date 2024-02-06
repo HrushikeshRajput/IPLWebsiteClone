@@ -1,0 +1,867 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;;
+}
+/* UPPER NAVBAR */
+#uNav {
+    height: 40px;
+    display: flex;
+    align-content: center;
+    background-color: #061e59;
+}
+.navbar-brand {
+    color: #fff;
+    font-size: 1rem;
+}
+.social-media-name {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+    margin: 0px 16px 0px 0px;
+    font-size: 1rem;
+}
+.social-media {
+    margin: 3px;
+}
+.social-media a i {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+}
+.social-media a i:hover {
+    color: rgba(255, 255, 255, 1);
+}
+/* MEDIA QUERY FOR UPPER NAVBAR */
+@media(max-width:991px) {
+    #uNav {
+        display: none;
+    }
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* MAIN NAVBAR */
+.navbar {
+    background-color: #19398a;
+    padding: 2px 35px 2px 35px;
+}
+.nav-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.nav-link:hover {
+    color: white;
+}
+.navbar-toggler {
+    color: #19398a;
+    background-color: #19398a;
+}
+.navbar-toggler:active{
+    color: #19398a;
+    background-color: #19398a;
+}
+.navbar-toggler span i{
+    font-size: 2rem;
+    padding: 3px;
+    justify-content: center;
+}
+.dropdown-menu {
+    padding: 0.5rem;
+}
+.dropdown-item {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.dropdown-item:hover {
+    color: #fff;
+    font-weight: 500;
+    transform: skew(-15deg);
+    background-color: #ef4123;
+    text-align: center;
+    border-radius: 8px;
+}
+span {
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-left: 5px;
+    align-self: center;
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+.searchBtn{
+    font-size: 1.5rem;
+    background-color: #19398a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+.form-control{
+    border-radius: 20px;
+    height: 2rem;
+    width: 200px;
+}
+.offcanvas {
+    color: #19398a;
+    background-color: #19398a;
+}
+.offcanvas-header {
+    background-color: #19398a;
+    color: white;
+}
+.offcanvas-header button {
+    background-color: #19398a;
+    padding: 3px;
+}
+.offcanvas-header button i {
+    font-size: 1.5rem;
+    padding: 3px;
+    justify-content: center;
+    color: white;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* SCROLLING IMAGE BODY */
+.parent-div {
+    width: 100%;
+    height: 540px;
+    position: relative;
+    display: flex;
+}
+.parent-div img{
+    width: 100%;
+    height: 540px;
+}
+.parent-div1{
+    width: 100%;
+    height: 540px;
+    position: relative;
+    display: flex;
+}
+ /* LEFT AND RIGHT ANGLE BUTTON TO SCROLL  */
+.leftAngleBtn {
+    position: absolute;
+    flex-direction: column;
+    top: 270px;
+}
+.leftAngleBtn button {
+    transform: skew(0deg);
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+.leftAngleBtn button:hover {
+    background-color: #ef4123;
+    color: #fff;
+}
+.rightAngleBtn {
+    position: absolute;
+    flex-direction: column;
+    right: 0px;
+    top: 270px;
+}
+.rightAngleBtn button {
+    transform: skew(0deg);
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+.rightAngleBtn button:hover {
+    background-color: #ef4123;
+    color: #fff;
+}
+.child-div {
+    width: 40%;
+    height: 400px;
+    /* background-color: black; */
+    /* border: 4px solid black; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    top: 140px;
+}
+/* MEDIA QUERY FOR CHILD DIV */
+@media screen and (min-width: 100px) and (max-width: 1200px) {
+    .child-div {
+        width: 60%;
+        position: absolute;
+        left: 50px;
+    }
+}
+.child-div div {
+    width: 100%;
+    /* height: 100px; */
+}
+.red {
+    /* background-color: red; */
+    height: 20px;
+}
+.green {
+    /* background-color: green; */
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.7rem;
+    /* line-height: 2.5rem; */
+    height: 100px;
+}
+/* MEDIA QUERY FOR GREEN DIV */
+@media(max-width:1152px) {
+    .green {
+        /* background-color: red; */
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:991px) {
+    .green {
+        /* background-color: red; */
+        font-size: 1.4rem;
+    }
+
+}
+@media(max-width:617px) {
+    .green {
+        /* background-color: red; */
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:400px) {
+    .green {
+        /* background-color: red; */
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:318px) {
+    .green {
+        /* background-color: red; */
+        font-size: 0.7rem;
+    }
+}
+.orange {
+    /* background-color: orange; */
+    height: 10px;
+}
+.pink {
+    /* background-color: pink; */
+    height: 50px;
+}
+.purple {
+    /* background-color: purple; */
+    height: 100px;
+}
+.silver {
+    /* background-color: silver; */
+    height: 20px;
+}
+.white {
+    /* background-color: white; */
+    font-weight: 200;
+    font-size: 1.1rem;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /* justify-content: space-between; */
+}
+/* MEDIA QUERY FOR WHITE DIV */
+@media (max-width:396px) {
+    .white {
+        /* display: none; */
+        flex-direction: column;
+        width: 100%;
+        height: 75px;
+    }
+}
+.yellow {
+    /* background-color: yellow; */
+    height: 50px;
+}
+.white div {
+    height: auto;
+    width: auto;
+}
+.btn {
+    color: #fff;
+    background-color: #ef4123;
+    transform: skew(-10deg);
+}
+.btn:hover {
+    color: #fff;
+    background-color: #ef4123;
+}
+.btn:active {
+    color: #fff;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* IMAGE BOX */
+.outerImageBox{
+    width: 100%;
+    background-color: #10172b;
+    padding: 50px 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.grid{
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 20px;
+}
+.grid div{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.grid div:hover{
+    border: 1px dashed rgba(241, 46, 82, 0.9);
+    cursor: pointer;
+}
+.grid img{
+    border-radius: 10px;
+    width: 130px;
+    height: 150px;
+    transition:  transform 0.2s ease-in-out;
+}
+.grid img:hover{
+    transform: scale(0.9);
+}
+.textContent{
+    margin-left: 2rem;
+}
+/* MEDIA QUERY FOR TEXTCONTENT DIV */
+@media screen and (min-width: 100px) and (max-width: 1200px) {
+    .textContent {
+        margin-left: 2rem;
+        padding-left: 5px;
+    }
+}
+.textContent h2{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+}
+.textContent p{
+    color: #ffffffb3;
+    font-size: 12px;
+}
+.grid figcaption{
+    color: #fff;
+    background-color: #10172b;
+    text-align: center;
+    font-size: 14px;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* WHAT ARE LOOKING FOR BOX */
+.outerBox{
+    width: 100%;
+    height: 190px;
+    background-color: #ffffff;
+    padding: 0px 0px 30px;
+}
+/* MEDIA QUERY FOR OUTER BOX */
+@media (max-width: 1048px) {
+    .outerBox {
+        height: 240px;
+    }
+}
+
+@media (max-width: 532px) {
+    .outerBox {
+        height: 440px;
+    }
+}
+.innerBox{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px;
+}
+.h1DivBox h1{
+    text-align: center;
+    color: #1D1D1D;
+    font-size: 28px;
+    padding: 30px 0px;
+}
+.statusdiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.statusdiv span{
+    color: #212529;
+    height: 59px;
+    width: 258px;
+    transform: skew(-10deg);
+    box-shadow: 3px -3px  black;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition:  box-shadow 0.2s ease-in-out;
+}
+.statusdiv1:hover{
+    cursor: pointer;
+}
+.statusdiv2:hover{
+    cursor: pointer;
+}
+.statusdiv3:hover{
+    cursor: pointer;
+}
+.statusdiv4:hover{
+    cursor: pointer;
+}
+.statusdiv span:hover{
+    box-shadow: -3px 3px 0 0.1px black;
+    transition:  box-shadow 0.4s ease-in-out;
+    background-color: #ef4123;
+    color: #fff;
+}
+.statusdiv a{
+    text-decoration: none;
+    color: #11141C;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    height: 59px;
+    width: 258px;
+}
+.statusdiv span a i{
+    font-size: 1rem ;
+}
+.statusdiv a:hover{
+    color: white;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* MAGIC MOMENTS */
+.magicMoments{
+    width: 100%;
+    height: 500px;
+    background-color: #10172b;
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+}
+/* MEDIA QUERY FOR MAGEIC MOMENTS */
+@media (max-width: 1256px) {
+    .magicMoments {
+        height: 900px;
+    }
+}
+
+@media (max-width: 639px) {
+    .magicMoments {
+        height: 1700px;
+    }
+}
+.headOfcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.headOfcontainer span h1{
+    color: #fff;
+    width: 184px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    /* padding-top: 5px; */
+}
+.headOfcontainer span a{
+    margin-right: 30px;
+}
+.seeMoreBtn{
+    padding: 3px 16px;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    background-color: #10172b;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.seeMoreBtn:hover{
+    background-color: #ef4123;
+    transition:  background-color 0.2s ease-in-out;
+}
+/* MEDIA QUERY FOR SEEMORBTN */
+@media (max-width:338px) {
+    .seeMoreBtn{
+        font-size: 12px;
+        width: 80px;
+    }
+}
+.divOfCards{
+    width: auto;
+    height: 380px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* MEDIA QUERY FOR DIVOFCARDS */
+@media (max-width: 1256px) {
+    .divOfCards {
+        height: 900px;
+    }
+}
+
+@media (max-width: 639px) {
+    .divOfCards {
+        height: 1700px;
+    }
+}
+.card{
+    width: 18rem;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+}
+.card:hover{
+    cursor: pointer;
+}
+/* MEDIA QUERY FOR CARD */
+@media (max-width: 335px) {
+    .card {
+        width: 13rem;
+    }
+}@media (max-width: 250px) {
+    .card {
+        width: 10rem;
+    }
+}
+.card img{
+    border-radius: 10px;
+}
+.card-body{
+    display: flex;
+}
+.card-title{
+    color: #11141C;
+    font-size: 20px;
+}
+/* MEDIA QUERY FOR CARD TITLE */
+@media (max-width: 335px) {
+    .card-title {
+        font-size: 13px;
+    }
+}
+@media (max-width: 250px) {
+    .card-title {
+        font-size: 10px;
+    }
+}
+.card-text i{
+    font-size: 2rem;
+    color: #11141C;
+}
+.card-footer p{
+    color: #11141cb3;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+/* MEDIA QUERY FOR CARD FOOTER P */
+@media (max-width: 335px) {
+    .card-footer p {
+        letter-spacing: normal;
+    }
+}
+.playIcon{
+    position: relative;
+    top: 150px;
+}
+.cardImgDiv{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.bottom-left a{
+    text-decoration: none;
+    color: white;
+}
+.bottom-left i{
+    font-size: 2rem;
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* POINTS TABLE PART */
+.pointsTable{
+    width: 100%;
+    height: 571px;
+    background-color: #ffffff;
+    padding: 30px 126px;
+}
+/* MEDIA QUERY FOR POINTS TABLE */
+@media (max-width: 445px) {
+    .pointsTable{
+      padding: 30px 50px;
+    }
+}
+@media screen and (min-width: 1051px) and (max-width: 1312px) {
+    .pointsTable {
+      padding: 30px 50px;
+    }
+}
+@media screen and (min-width: 791px) and (max-width: 1160px) {
+    .pointsTable {
+      height: 1142px;
+    }
+}
+@media screen and (max-width: 792px){
+    .pointsTable {
+      height: 1715px;
+    }
+}
+.headOfPointsTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* MEDIA QUERY FOR HEAD OF POINTS TABLE */
+@media (max-width: 445px) {
+    .headOfPointsTable {
+      display:flex;
+      flex-direction:row;
+    }
+}
+.span1-OfheadOfPointsTable{
+    color: #212529;
+    font-style: italic;
+    font-size: 28px;
+}
+/* MEDIA QUERY FOR SPAN1- OF HEAD OF POINTS TABLE */
+@media (max-width: 445px) {
+    .span1-OfheadOfPointsTable {
+      font-size: 1rem;
+    }
+}
+.span2-OfheadOfPointsTable{
+    margin-right: 19px;
+    color: #212529;
+}
+/* MEDIA QUERY FOR SPAN2- OF HEAD OF POINTS TABLE */
+@media (max-width: 445px) {
+    .span2-OfheadOfPointsTable {
+     margin-right: 0px;
+    }
+}
+.span2-OfheadOfPointsTable button{
+    border: none;
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #212529;
+}
+/* MEDIA QUERY FOR SPAN2- OF HEAD OF POINTS TABLE BUTTON */
+@media (max-width: 445px) {
+    .span2-OfheadOfPointsTable button{
+      font-size: 16px;
+    }
+}
+.pointsTableCardsBox {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 16px 10px;
+}
+.pointsTableCard{
+    height: 370px;
+    width: 260px;
+    padding: 16px 10px;
+    border-radius: 15px;
+    border: 1px solid #c5c5c8b3;
+    margin-top: 10px;
+}
+.pointsTableCard:hover{
+    box-shadow: 3px 3px 20px #afafb3b3; 
+    transition: box-shadow 0.90s ease-in-out
+}
+.teamInfo{
+    width: 240px;
+    height: 65px;
+    display: flex;
+}
+.teamNo{
+    color: #11141C;
+    font-size: 65px;
+    width: 26px;
+    line-height: 65px;
+    font-weight: 400;
+    text-shadow: #898b97b3 2px -4px;
+}
+.teamName{
+    color: #11141C;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: 10px;
+    text-align: left;
+    transform: translateY(4px);
+}
+.teamLogo{
+    width: 240px;
+    height: 120px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
+}
+.teamLogo span{
+    height: 24px;
+    width: 24px;
+    margin: 7px 0px 0px 0px;
+}
+.teamLogoImage{
+    position: relative;
+    top: -30px;
+    left: 70px;
+    height: 100px;
+    width: 100px;
+}
+.teamPoints{
+    width: 240px;
+    height: 43px;
+    margin: 0px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.teamPoints div{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #11141c;
+}
+.teamPoints div div{
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7f8184;
+}
+.NRR span{
+    color: #2a841b;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.recentForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+.title{
+    height: 18px;
+    width: 220px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.title span{
+    font-size: 16px;
+    color: #56585f;
+}
+.wonORLoss{
+    width: 220px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+}
+.wonORLoss div{
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    margin: 0px 8px 0px 0px;
+    border: 1px solid #11141C;
+}
+.wonORLoss div span{
+    text-align: center;
+    font-size: 15px;
+    height: 28px;
+    width: 28px;
+    padding: 3px 3px 3px 3px;
+    background-color: #ffffff40;
+}
+.wonspan{
+    color: #2a841b;
+    font-size: 15px;
+}
+.lossspan{
+    color: #d34646;
+    font-size: 15px;
+}
+.footerOfPointsTable{
+    width: auto;
+    height: auto;
+    padding: 10px ;
+    margin: 20px 50px;
+    display: flex;
+    justify-content: center;
+}
+/* MEDIA QUERY FOR FOOTER OF POINTS TABLE */
+@media (max-width:265px) {
+    .footerOfPointsTable{
+        padding: 2px;
+    }
+}
+.fullPointsTable{
+    width: 210px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #1d2e71;
+    text-align: center;
+    padding-top: 8px;
+    transform: skew(-20deg);
+}
+.fullPointsTable:hover{
+    box-shadow: 3px -3px 0 0.1px #ef4123;
+    border:1px solid #ef4123;
+    transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+.fullPointsTable a{
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 18px;
+}
+/* MEDIA QUERY FOR FOOTER FULLU POINTS TABLE a */
+@media (max-width:265px) {
+
+    .fullPointsTable a{
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* LATESTS VIDEOS CARD */
+.latestVideoOfCard{
+    background-color: #19398a;
+}
+.latestVideoOfCardBody .card-title{
+    color: #ffffffe6;
+}
+.latestVideoOfCard-footer p{
+    color: #ffffff80;
+}
